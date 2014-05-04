@@ -11,7 +11,7 @@ if ratio == "":
 else: 
 	ratio = float(ratio)
 
-EAT = (memCycle + tlbTime) * ratio + (ptnum * memCycle + tlbTime) * (1 - ratio)
+EAT = (memCycle + tlbTime) * ratio + ((ptnum+1) * memCycle + tlbTime) * (1 - ratio)
 
 print("Effective Access Time = " + str(EAT))
 

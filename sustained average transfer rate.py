@@ -1,5 +1,5 @@
 print("All input fields are integers\n");
-print("NOTICE: IN THE SLIDES THE ANSWER IN MB WAS CALCULATED AS KB/1000 \n")
+print("NOTICE: IN THE SLIDES THE ANSWER IN MB WAS CALCULATED AS KB*1000 \n")
 
 emulate = int(raw_input("0 to emulate this error, 1 to not: "))
 if emulate == 0:

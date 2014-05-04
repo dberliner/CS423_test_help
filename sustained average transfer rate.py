@@ -5,7 +5,7 @@ emulate = int(raw_input("0 to emulate this error, 1 to not: "))
 if emulate == 0:
 	kbtomb = 1024.0
 else: 
-	mbtomb=1000.0
+	kbtomb=1000.0
 
 rpm = raw_input("RPM (leave blank if rev/sec is given): ")
 rps = raw_input("RPS (leave blank if rev/min is given): ")

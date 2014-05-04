@@ -23,3 +23,4 @@ for page in str(pattern):
 	for i in range(0,num):
 		sys.stdout.write(cache[i] + ', ')
 	sys.stdout.write("\n")
+print("Total faults: " + str(faults)) 

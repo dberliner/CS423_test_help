@@ -22,16 +22,11 @@ sectors = int(raw_input("Enter sectors per track "))
 
 seek = int(raw_input("Enter seek time in ms "))
 seek = float(seek)
-print("seek " + str(seek))
 
 rotLatency = 1.0/rps * 0.5 * 1000.0 # in ms
-print("rotLatency: " + str(rotLatency))
 SATR = float(rps * sectors * trans)/(1024.0*kbtomb) #in MB
-print("SATR: " + str(SATR))
 readTime = (float(trans/(1024.0*1000.0))/SATR)*kbtomb # in ms (lovely unit conversions)
-print("Total readtime: " + str(readTime))
 totalSeek = seek + rotLatency + readTime # in ms
-print("Total seek: " + str(totalSeek))
 ETR = float(1/totalSeek) * float(trans/1024.0)
 
 print("Effective transferring rate: " + str(ETR))

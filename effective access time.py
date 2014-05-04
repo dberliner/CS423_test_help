@@ -14,3 +14,5 @@ else:
 EAT = (memCycle + tlbTime) * ratio + (ptnum * memCycle + tlbTime) * (1 - ratio)
 
 print("Effective Access Time = " + str(EAT))
+
+raw_input("Press enter to exit")

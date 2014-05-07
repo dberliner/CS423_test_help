@@ -3,9 +3,9 @@ print("NOTICE: IN THE SLIDES THE ANSWER IN MB WAS CALCULATED AS KB*1000 \n")
 
 emulate = int(raw_input("0 to emulate this error, 1 to not: "))
 if emulate == 0:
-	kbtomb = 1024.0
-else: 
 	kbtomb=1000.0
+else: 
+	kbtomb = 1024.0
 
 rpm = raw_input("RPM (leave blank if rev/sec is given): ")
 rps = raw_input("RPS (leave blank if rev/min is given): ")
